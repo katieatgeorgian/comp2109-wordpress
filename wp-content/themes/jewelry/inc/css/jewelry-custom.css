@@ -4,6 +4,7 @@
 html {
   width: 1024px;
   margin: 0 auto;
+  font-size: 16px;
 }
 
 body {
@@ -33,6 +34,10 @@ a {
   color: #6a3394 !important;
 }
 
+nav a {
+  font-size: 0.8rem;
+}
+
 button {
   background-color: #895ca9 !important;
 }
@@ -52,7 +57,7 @@ button:hover {
 }
 
 .masthead article button:hover {
-  background-color: #b9bfc0 !important;
+  background-color: #ffffff !important;
 }
 
 .masthead article button a {
@@ -68,6 +73,111 @@ h1 {
   display: none;
 }
 
+.category1 button,
+.category2 button,
+.category3 button {
+  font-size: 0.7rem !important;
+}
+
+.blogPosts {
+  width: 80% !important;
+  margin: 0 auto;
+}
+
+.category1,
+.category3 {
+  display: grid;
+  grid-auto-columns: 35% 35% 35% 35% 35%;
+  grid-auto-rows: 35% 35% 35% 35% 35%;
+}
+
+.category2 {
+  display: grid;
+  grid-auto-columns: 35% 35% 35% 35% 35%;
+  grid-auto-rows: 35% 35% 35% 35% 35%;
+}
+
+.category1Div,
+.category3Div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px #a7a7a7;
+  width: 40%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.category2Div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px #a7a7a7;
+  width: 40%;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-left: -10px !important;
+}
+
 h2 {
   font-family: Lato, sans-serif !important;
+  color: darkslategrey !important;
+  font-size: 2rem !important;
+}
+
+h3 {
+  font-family: Lato, sans-serif !important;
+  color: darkslategrey !important;
+  font-size: 1rem !important;
+}
+
+.site-info {
+  margin: 0.25rem !important;
+}
+
+i {
+  font-size: 1.3rem !important;
+}
+
+i:hover {
+  animation-name: grow;
+  animation-duration: 3s;
+}
+
+@keyframes grow {
+  from {
+    color: #a7a7a7;
+  }
+  to {
+    font-size: 1.6rem;
+    transform: rotate(360deg);
+  }
+}
+
+.collectionBtn {
+  color: #a7a7a7 !important;
+  box-shadow: 3px 3px 10px #6a3394 !important;
+}
+
+.blogPost a {
+  font-size: 1rem !important;
+}
+.blogPost p {
+  color: #6e6d6d !important;
+  font-size: 0.8rem !important;
+}
+
+button#wpforms-submit-105.wpforms-submit {
+  color: white !important;
+}
+
+div.menu-main-container ul#menu-main.menu {
+  display: flex;
+  padding-top: 2rem;
+}
+
+div.menu-main-container ul#menu-main.menu li {
+  padding-right: 1rem;
 }
