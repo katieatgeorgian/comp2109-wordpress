@@ -35,12 +35,12 @@
 <?php wp_body_open(); ?>
 <div id="page container" class="site">
 <header id="masthead">
-	<div class="d-flex justify-content-between">
+	<div class="row justify-content-between">
 		<article>
 			<!-- logo container -->
-			<img class="logo" src="<?php the_field('logo'); ?>">
+			<img class="logo ml-2" src="<?php the_field('logo'); ?>">
 		</article>
-		<nav>
+		<nav class="mr-2">
 			<?php
 				wp_nav_menu( array(
 					'menu' => 'main', //do not fall back to first non-empty menu

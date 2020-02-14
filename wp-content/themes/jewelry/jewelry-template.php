@@ -24,26 +24,34 @@ get_header(); //hook
     
     <section class="category1 mx-auto mb-5 row" style="background-image: url(<?php the_field('category1_image'); ?>); height: 400px; width: 80%; background-repeat: no-repeat; background-size: cover;">
         <div class="category1Div ml-3 text-center col-12">
-            <h3 class="pt-4 font-weight-bold">Shop <?php the_field('category1_name'); ?></h3>
-            <button>See our Collection</button>
+            <h3 class="pt-2 font-weight-bold">Shop <?php the_field('category1_name'); ?></h3>
+            <button class="mt-2 p-3">See our Collection</button>
         </div>
     </section>
     <section class="category2 mx-auto mb-5 row" style="background-image: url(<?php the_field('category2_image'); ?>); height: 400px; width: 80%; background-repeat: no-repeat; background-size: cover;">
         <div class="category2Div ml-3 text-center col-12">
-            <h3 class="pt-4 font-weight-bold">Shop <?php the_field('category2_name'); ?></h3>
-            <a href="#"><button>See our Collection</button></a>
+            <h3 class="pt-2 font-weight-bold">Shop <?php the_field('category2_name'); ?></h3>
+            <button class="mt-2 p-3">See our Collection</button>
         </div>
     </section>
     <section class="category3 mx-auto mb-5 row" style="background-image: url(<?php the_field('category3_image'); ?>); height: 400px; width: 80%; background-repeat: no-repeat; background-size: cover;">
         <div class="category3Div ml-3 text-center col-12">
-            <h3 class="pt-4 font-weight-bold">Shop <?php the_field('category3_name'); ?></h3>
-            <button>See our Collection</button>
+            <h3 class="pt-2 font-weight-bold">Shop <?php the_field('category3_name'); ?></h3>
+            <button class="mt-2 p-3">See our Collection</button>
         </div>
     </section>
 
     <section class="blogPosts"> <!-- display the posts -->
         <!-- define our WP query parameters -->
-        <?php $the_query = new WP_Query('posts_per_page=5'); ?>
+        
+        <?php 
+        //arguments to pass in to our query WP_Query
+        $args = array (
+            'showposts' => '5',
+            'category_name' => 'jewelry',
+        );
+
+        $the_query = new WP_Query($args); ?>
         <!-- start our WP query -->
         <h4 class="text-center pb-3">Blog Posts</h4>
         <?php while($the_query -> have_posts()) : $the_query -> the_post(); 
@@ -56,7 +64,7 @@ get_header(); //hook
                 <!-- display the post excerpt -->
                 <div class="blogPost">
                     <a href="<?php the_permalink() ?>"> <!-- WP php hook to grab url of item --><?php the_title(); ?>
-                    <?php the_excerpt(_('(more..)')); ?></a> <!-- in functions there is a function - add "more" -->
+                    <?php the_excerpt(__('(more..)')); ?></a> <!-- in functions there is a function - add "more" -->
                     
                 </div>
             

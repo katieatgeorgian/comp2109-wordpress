@@ -21,7 +21,7 @@ li {
 }
 
 .thumbnail {
-  width: 300px;
+  width: 200px;
 }
 
 .divider {
@@ -52,16 +52,20 @@ button:hover {
 
 .masthead article button {
   background-color: #e7f1f3 !important;
-  border: 1px solid rgb(83, 83, 194);
+  border: 1px solid darkslategrey;
   box-shadow: 3px 3px 10px #a7a7a7;
 }
 
 .masthead article button:hover {
-  background-color: #ffffff !important;
+  background-color: #fff !important;
 }
 
 .masthead article button a {
-  color: #6a3394 !important;
+  color: #895ca9 !important;
+}
+
+.masthead article button:hover a {
+  color: darkslategrey !important;
 }
 
 .logo {
@@ -133,12 +137,18 @@ h3 {
   font-size: 1rem !important;
 }
 
+h4 {
+  font-family: Lato, sans-serif !important;
+  color: darkslategrey !important;
+  font-size: 1.1rem !important;
+}
+
 .site-info {
   margin: 0.25rem !important;
 }
 
 i {
-  font-size: 1.3rem !important;
+  font-size: 1.2rem !important;
 }
 
 i:hover {
@@ -148,16 +158,17 @@ i:hover {
 
 @keyframes grow {
   from {
-    color: #a7a7a7;
+    color: darkslategrey;
   }
   to {
     font-size: 1.6rem;
+    color: darkslategrey;
     transform: rotate(360deg);
   }
 }
 
 .collectionBtn {
-  color: #a7a7a7 !important;
+  color: darkslategrey !important;
   box-shadow: 3px 3px 10px #6a3394 !important;
 }
 
@@ -166,7 +177,7 @@ i:hover {
 }
 .blogPost p {
   color: #6e6d6d !important;
-  font-size: 0.8rem !important;
+  font-size: 0.7rem !important;
 }
 
 button#wpforms-submit-105.wpforms-submit {
@@ -180,4 +191,29 @@ div.menu-main-container ul#menu-main.menu {
 
 div.menu-main-container ul#menu-main.menu li {
   padding-right: 1rem;
+}
+
+#wpforms-form-105.wpforms-validate.wpforms-form {
+  text-align: center !important;
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  #wpforms-form-105.wpforms-validate.wpforms-form {
+    text-align: left !important;
+    width: 120% !important;
+    margin: 0 auto;
+  }
+
+  footer nav,
+  footer div.copyright {
+    text-align: left;
+  }
+  footer div.address {
+    text-align: right;
+  }
+  div.wpforms-container wpforms-container-full#wpforms-105 {
+    width: 120% !important;
+  }
 }
