@@ -32,7 +32,7 @@
 			</nav><!-- .footer-navigation -->
 			<?php endif; ?>
 			<div class="col-xs-12 col-md-5">
-			   <h4 class="mt-0">Sign up for Our Newsletter</h4>
+			   <h4 class="mt-0 text-left">Sign up for Our Newsletter</h4>
 			   <div>
 					<?php echo do_shortcode( '[wpforms id="105"]' ); ?>
 				</div>
