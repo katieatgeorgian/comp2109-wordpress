@@ -325,6 +325,7 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/customizer.php';
 
 
+
 /****** MY FUNCTIONS START HERE ******/
 
 //Edit the posts
@@ -333,65 +334,56 @@ add_filter('excerpt_length', function($length) {
 }); //adjusting excerpt length - 20 refers to 20 characters
 
 
-//create your first custom post type
-//create movies review custom post type
-/* create a new function for custom post type.  call it something unique - do this to limit conflicts with any other code inside functions.php file.  best practice */
-function movie_reviews_init() {
+//Custome Post Type
+function tour_offered_init() {
 	$args = array(
-		//label - plural descriptive name for post type marked for translation.  if you don't declared a custom label WP will use name of custom post type by default
-		'label' => 'Movie Reviews',
-		//anyone logged in can see it and use it - whether a PT is intended to be used publicaly either via admin interface or by front end users.  WP sets this to false by default.  here set it to true as we do want our custom PT to display publically
+		'label' => 'Featured Tours Offered',
 		'public' => true,
-		//generates a default UI for managing PT in the admin.  can set this to T or False.  for sake of usability, a UI in admin area is always a good thing
 		'show_ui' => true,
-		// declare what type of CPT we will be dealing with.  used to build the read, edit, and delete capabilities of a post/page.  can chose either post or page - can list multiple (i.e. post, page, product)
 		'capability_type' => 'post',
-		// whether post type is hierachical (i.e. page) - i.e. whether or not you can declared a parent page, child page, etc. of post type.  mainly intended for pages.  declare it false so there's no need to worry about it for our example - subservice to service should always be child
 		'hierarchial' => false,
-		//either true or false - default is true so if slug argument is entered then the slug name is prepended to te post.  our slug "movie-reviews" will be prepended to each new post of that type.  can bend to will
-		'rewrite' => array('slug' => 'movie-reviews'),
-		//rule is T or F - sets PT name as query varialble - running while loops and doing query this is what looking for - use for want ever we want
+		'rewrite' => array('slug' => 'tours'),
 		'query_var' => true,
-		//rule declares a custom icon for the admin area.  here we use neat resource called dashicons that are includin in WP - if wanted to use font awesome just put that in instead
-		'menu_icon' => 'dashicons-video-alt',	
-		//usually an array of features the custom PT will support.  quite a long list.  These tie into admin page - none are mandatory
-		//calling in custom post types into our custom post type
+		'menu_icon' => 'dashicons-location-alt',
 		'supports' => array(
 			'title', //page title
 			'editor', //classic editor
 			'excerpt', //change for display
-			'trackbacks',
 			'custom-fields',
-			'comments',
 			'revisions', //see when changes done and by who - hold all info about done to site - make mistake, go in and load back to where it was done
 			'thumbnail', 
 			'author',
 			'page-attributes',  //need to select custom template
 			)
 		);
-		register_post_type('movie-reviews', $args);//register PT calling it movie reviews and calling in the $args
-}//ends movie review function
+		register_post_type('tours_offered', $args);
+}
 
-add_action('init', 'movie_reviews_init'); //initializing it - movie_reviews_init is function name
+add_action('init', 'tour_offered_init'); //initializing it
 
 //let's make our first shortcode - common - need to know what displaying
-function movie_reviews() {
-	$query = new WP_Query ( array('post_type' => 'movie_reviews', 'post_per_page' => 10) ); //looking for movie review PT
+function tours_offered() {
+	$query = new WP_Query ( array('post_type' => 'tours_offered', 'post_per_page' => 10, 'orderby' => 'menu_order') );
 
 	//created dynamically - keep simple - placing inside something
 	while ($query->have_posts() ) : $query->the_post();
-	echo "<div><h3>";
-		the_title(); // sets out title
-	echo "</h3></div>";
-	echo "<div class='movie-content'> ";
-		the_post_thumbnail();
-		the_content(); //the_content must be placed inside a while loop to work
-	echo "</div>";
+
+
+	echo "<div class='tours-offered'> <div class='tour-image'>";
+			the_post_thumbnail();
+			// the_content();
+	echo "
+		<button class='toursBtn'>";
+			the_title();
+			
+	echo "</button>
+	</div>
+	</div>";
 	endwhile;
 }
 
-function movie_shortcode() {
-	add_shortcode('movie_shortcode', "movie_reviews"); //first is this function, second is function above
+function tours_shortcode() {
+	add_shortcode('tours_shortcode', "tours_offered");
 }
 
-add_action('init', 'movie_shortcode'); //initialize shortcode - movie_shortcode is the name of the SC i.e. [movie_shortcode]
+add_action('init', 'tours_shortcode'); //initialize shortcode
