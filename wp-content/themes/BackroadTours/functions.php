@@ -363,23 +363,24 @@ add_action('init', 'tour_offered_init'); //initializing it
 
 //let's make our first shortcode - common - need to know what displaying
 function tours_offered() {
-	$query = new WP_Query ( array('post_type' => 'tours_offered', 'post_per_page' => 10, 'orderby' => 'menu_order') );
+	$query = new WP_Query ( array('post_type' => 'tours_offered', 'post_per_page' => 4, 'orderby' => 'menu_order') );
 
 	//created dynamically - keep simple - placing inside something
 	while ($query->have_posts() ) : $query->the_post();
 
 
-	echo "<div class='tours-offered'> <div class='tour-image'>";
-			the_post_thumbnail();
+	echo "<div class='tours-offered'> 
+			<div class='tour-image'>";
+				the_post_thumbnail();
 			// the_content();
-	echo "
-		<button class='toursBtn'>";
+	echo "<button class='toursBtn'>";
 			the_title();
 			
 	echo "</button>
 	</div>
 	</div>";
 	endwhile;
+	wp_reset_query(); 
 }
 
 function tours_shortcode() {

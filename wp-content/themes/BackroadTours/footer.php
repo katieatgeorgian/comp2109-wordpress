@@ -32,7 +32,7 @@
 			</nav><!-- .footer-navigation -->
 			<?php endif; ?>
 			<div class="col-xs-12 col-md-5">
-				
+				<p><small>&#169; Backroad Guided Tours - All Rights Reserved</small></p>
 			</div>
 			<div class="col-xs-12 col-md-3 address text-right">
 				<p class="font-weight-bold mb-0">Address</p>
@@ -46,12 +46,9 @@
 				</div>
 		
 		</div><!-- made up div d-flex row -->
-		<div class="row">
-			<div class="col-xs-12 col-md-6 copyright">
-				<p><small>&#169; Backroad Guided Tours - All Rights Reserved</small></p>
-			</div>
-			<section class="col-xs-12 col-md-6 ">
-				<ul class="row justify-content-end ">
+		<div>
+			<section>
+				<ul class="row justify-content-center">
 				<li class="list-unstyled px-1">
 					<a title="Facebook" href="#"
 					><i class="fa fa-facebook-square icons"></i

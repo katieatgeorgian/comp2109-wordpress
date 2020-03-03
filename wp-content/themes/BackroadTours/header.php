@@ -38,7 +38,7 @@
 	<div class="row justify-content-between">
 		<article>
 			<!-- logo container -->
-			<img class="logo ml-5" src="<?php the_field('logo'); ?>">
+			<a href="backroad-guided-tours"><img class="logo ml-5 mt-2 mb-1" src="<?php the_field('logo'); ?>"></a>
 		</article>
 		<nav class="mr-2 mr-5">
 			<?php

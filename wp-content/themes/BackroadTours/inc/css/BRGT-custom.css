@@ -4,6 +4,7 @@
 html {
   margin: 0 auto;
   font-size: 16px;
+  color: #242526 !important;
 }
 
 body {
@@ -25,8 +26,26 @@ li {
   height: 100px;
 }
 
-h1 {
+.mastheadGrid h1 {
   display: none;
+}
+
+address,
+p {
+  color: #242526 !important;
+}
+
+h1 {
+  color: #242526;
+  text-shadow: 1px 1px 5px white;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif !important;
+}
+
+footer address,
+.address p,
+footer a,
+footer small {
+  font-size: 0.6rem !important;
 }
 
 h2 {
@@ -42,34 +61,48 @@ h2 {
 
 h3 {
   color: #c75e28;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif !important;
 }
 
 h4 {
   color: #1f490c;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif !important;
 }
 
 h4:nth-of-type(1) {
   margin-top: 0;
 }
 
+h6 {
+  margin-bottom: 0 !important;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif !important;
+}
+
 p {
   font-size: 0.8rem;
 }
 
-a,
-address,
-.address,
-small {
+a {
   color: #242526 !important;
+}
+
+a:hover {
+  color: #c75e28 !important;
 }
 
 q {
   color: white;
   font-style: italic;
+  padding: 0.8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 cite {
   color: #242526;
+  padding: 0.8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mastheadGrid {
@@ -125,7 +158,6 @@ cite {
 img.infoImage {
   height: 100px !important;
   width: auto !important;
-  outline: 3px dotted purple;
 }
 
 .testimony {
@@ -242,48 +274,118 @@ i:hover {
   }
 }
 
+footer div.site-info {
+  margin-left: 2rem !important;
+  margin-right: 2rem !important;
+}
+
+footer ul#menu-brgt-footer {
+  padding-left: 0 !important;
+}
 /* CPT CSS */
 
 .the-page-content {
   text-align: center;
 }
-/* previous css */
 
-/* 
-.site-info {
-  margin: 0.25rem !important;
+/* ABOUT PAGE */
+
+.parallax {
+  margin-top: 3rem;
+  padding-top: 3rem;
 }
 
+.welcomeAbout {
+  margin-top: 3rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 
+.aboutGallery {
+  margin-top: 3rem;
+}
 
+.galleryHeader {
+  font-size: 1.4rem;
+}
 
+/* CONTACT PAGE */
+textarea#wpforms-348-field_11 {
+  width: 80%;
+}
 
-button#wpforms-submit-105.wpforms-submit {
+div.contactForm + div h2 {
+  text-align: left !important;
+}
+
+button.wpforms-submit#wpforms-submit-348 {
+  background-color: #c75e28 !important;
   color: white !important;
 }
 
-
-#wpforms-form-105.wpforms-validate.wpforms-form {
-  text-align: center !important;
-  width: 50%;
-  margin: 0 auto;
+button.wpforms-submit#wpforms-submit-348:hover {
+  background-color: white !important;
+  border: 1px solid #242526 !important;
+  color: #c75e28 !important;
+  border-radius: 5px;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+  font-size: 1rem !important;
 }
 
-@media only screen and (min-width: 768px) {
-  #wpforms-form-105.wpforms-validate.wpforms-form {
-    text-align: left !important;
-    width: 120% !important;
-    margin: 0 auto;
-  }
+/* POST CSS */
 
-  footer nav,
-  footer div.copyright {
-    text-align: left;
-  }
-  footer div.address {
-    text-align: right;
-  }
-  div.wpforms-container wpforms-container-full#wpforms-105 {
-    width: 120% !important;
-  }
-} */
+.wp-post-image {
+  width: 300px;
+  height: auto;
+}
+.postDivider {
+  background-color: #1f490c;
+  height: 2px;
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.sidebar-container {
+  text-align: right !important;
+  font-size: 0.8rem !important;
+}
+
+input.search-submit {
+  text-align: right !important;
+  width: fit-content;
+  justify-content: flex-end !important;
+  margin-top: 0 !important;
+  margin-bottom: 1rem;
+}
+
+h2.widget-title {
+  font-size: 1rem !important;
+  text-align: right !important;
+}
+
+.widget.widget_recent_entries ul li a {
+  font-size: 0.8rem !important;
+}
+
+.widget.widget_recent_comments ul li a {
+  font-size: 0.8rem !important;
+}
+
+.widget.widget_archive ul li a {
+  font-size: 0.8rem !important;
+}
+
+.widget.widget_categories ul li a {
+  font-size: 0.8rem !important;
+}
+
+.widget.widget_meta ul li a {
+  font-size: 0.8rem !important;
+}
+
+form.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}

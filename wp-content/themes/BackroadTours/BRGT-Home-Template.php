@@ -17,11 +17,12 @@ get_header(); //hook
         <article class="col-12 mastheadGrid">
             <h1><?php the_field('page_title'); ?></h1><!-- use title of page to display title of page - looks at url of page, looks for page title and spits it out -->
             <h2 class="mt-3"><?php the_field('masthead_phrase') ?> </h2>
-            <button class="mastheadBtn"><a href="#"><?php the_field('masthead_button1') ?></a></button>
+            <button class="mastheadBtn"><a href="contact"><?php the_field('masthead_button1') ?></a></button>
         </article>
     </section>
     <section class="row welcome justify-content-center pl-5 pr-5">
         <h3>Welcome to <?php the_field('page_title'); ?></h3>
+
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Donec quis enim vel enim tempus dictum.</p>
 
         <p class="text-center">Sed fermentum euismod ipsum, quis facilisis lorem faucibus vel. Nunc a eleifend massa. Proin ultrices mollis fringilla. Vestibulum id mollis mi. Mauris ac nisl imperdiet, ultricies urna quis, tincidunt orci. Duis a justo leo.</p>
@@ -33,7 +34,8 @@ get_header(); //hook
     </section>
 
     <section class="row infoSection">
-        <div class="col-xs-12 col-md-5 pl-5 pr-5"><img src="<?php the_field('info_image'); ?>" /></div>
+        <div class="col-xs-12 col-md-5 pl-5 pr-5"><img class="ml-5" src="<?php the_field('mid_page_photo'); ?>"></div>
+ 
         <div class="col-xs-12 col-md-7 pl-5 pr-5">
             <h4>Discover</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor nunc a ante feugiat, a ultricies turpis dictum. Mauris est mauris, convallis nec nulla bibendum, lacinia iaculis mi. Curabitur ornare quam sit amet urna mattis suscipit. Nulla lorem quam, dictum in feugiat quis, suscipit nec metus.<p> 
@@ -76,7 +78,6 @@ get_header(); //hook
                         <a href="<?php the_permalink() ?>"> <!-- WP php hook to grab url of item --><?php the_title(); ?>
                         <div class="thumbnail"><?php the_post_thumbnail(); ?></div>
                         <?php the_excerpt(__('(more..)')); ?></a> <!-- in functions there is a function - add "more" --> 
-                        </a>
                         
                     </div>
                 
