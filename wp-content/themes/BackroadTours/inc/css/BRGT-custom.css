@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap");
 
+/* HOME PAGE / GLOBAL */
 html {
   margin: 0 auto;
   font-size: 16px;
@@ -11,6 +12,7 @@ body {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
   color: #242526 !important;
+  overflow-x: hidden;
 }
 
 .masthead {
@@ -41,6 +43,11 @@ h1 {
   font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif !important;
 }
 
+h1.offered-tours-h1 {
+  color: #c75e28;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif !important;
+}
+
 footer address,
 .address p,
 footer a,
@@ -61,6 +68,11 @@ h2 {
 
 h3 {
   color: #c75e28;
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif !important;
+}
+
+h3.contactQuote {
+  color: white;
   font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif !important;
 }
 
@@ -288,6 +300,34 @@ footer ul#menu-brgt-footer {
   text-align: center;
 }
 
+/* button.tours-offered-btn {
+  background-color: #c75e28 !important;
+  color: white !important;
+  border-radius: 5px;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+  font-size: 1rem !important;
+  padding: 1rem;
+}
+
+button.tours-offered-btn:hover {
+  background-color: white !important;
+  border: 1px solid #242526 !important;
+  color: #c75e28 !important;
+  border-radius: 5px;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+  font-size: 1rem !important;
+  padding: 1rem;
+}
+
+button.toursBtn a:hover {
+  color: white !important;
+} */
+
+.place {
+  color: #242526;
+}
 /* ABOUT PAGE */
 
 .parallax {

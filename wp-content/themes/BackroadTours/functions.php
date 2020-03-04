@@ -354,6 +354,7 @@ function tour_offered_init() {
 			'thumbnail', 
 			'author',
 			'page-attributes',  //need to select custom template
+			'url'
 			)
 		);
 		register_post_type('tours_offered', $args);
@@ -372,11 +373,11 @@ function tours_offered() {
 	echo "<div class='tours-offered'> 
 			<div class='tour-image'>";
 				the_post_thumbnail();
-			// the_content();
-	echo "<button class='toursBtn'>";
+				// the_content();
+	echo "<button class='toursBtn'> <a href='offered-tours'>";
 			the_title();
 			
-	echo "</button>
+	echo "</a></button>
 	</div>
 	</div>";
 	endwhile;

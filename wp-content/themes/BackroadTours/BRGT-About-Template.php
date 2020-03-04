@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: BRGT - About;
- * The home page template file
+ * The about page template file
  * 
  **/
 get_header(); //hook

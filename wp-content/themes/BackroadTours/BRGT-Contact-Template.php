@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: BRGT - Contact;
- * The home page template file
+ * The contact page template file
  * 
  **/
 get_header(); //hook
@@ -36,7 +36,9 @@ get_header(); //hook
         </div>
     </section>
 
-
+    <section class="row testimony p-5 mb-3 justify-content-center">
+        <h3 class="contactQuote">Experience The Road Less Travelled</h3>
+    </section>
     </main>
 </div>
 
