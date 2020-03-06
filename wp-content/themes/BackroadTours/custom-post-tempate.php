@@ -16,7 +16,7 @@ get_header('post');
                 ?>
                 <div class="row col-xs-12 col-md-7 mr-3 ml-5">
                     
-                    <div class="col-xs-12 flex-column">
+                    <div class="col-xs-12 flex-column ml-5">
                         <div class="mb-3"> <?php the_post_thumbnail(); ?> </div>
                         <div> <?php the_title(); ?></div>
                         <div class="postDivider mt-2 mb-2"></div>
@@ -64,3 +64,7 @@ get_header('post');
     </div>
 
 </div>
+
+<?php 
+    get_footer();
+?>

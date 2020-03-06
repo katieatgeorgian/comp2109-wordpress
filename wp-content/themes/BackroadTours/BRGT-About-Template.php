@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: BRGT - About;
+ * Description: template for the about page - navigation, masthead with title, followed by a block of text, a photo, then a two-column section, a section (with triangle cutout) perfect for quotes, and finally an image gallery using modula, before a footer.
  * The about page template file
  * 
  **/
@@ -13,7 +14,7 @@ get_header(); //hook
     <main id="main" class="site-main" role="main">
     
     <!-- let's use the featured image for the masthead image -->
-    <section class="masthead mb-5 row" style="background-image: url(<?php the_field('masthead_image'); ?>); height: 400px; background-repeat: no-repeat; background-size: cover; background-position: center center"> <!-- display image -->
+    <section class="masthead mb-5 row" style="background-image: url(<?php the_field('masthead_image'); ?>); height: 400px; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-position: center center background-attachment: fixed;"> <!-- display image -->
         <article class="col-12">
             <h1 class="text-center pt-5"><?php the_field('page_title'); ?></h1><!-- use title of page to display title of page - looks at url of page, looks for page title and spits it out -->
         </article>
@@ -29,7 +30,7 @@ get_header(); //hook
         <p>Morbi ultricies iaculis risus at ullamcorper. Cras dictum justo fringilla, egestas nisl ut, vestibulum elit. Nam consequat magna quis molestie faucibus. Mauris dapibus odio dapibus pellentesque fringilla.</p>
     </section>
 
-    <div class="parallax" style="background-image: url(<?php the_field('parallax_image'); ?>); min-height: 400px; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: center center"></div>
+    <div class="parallax" style="background-image: url(<?php the_field('parallax_image'); ?>); min-height: 400px; background-repeat: no-repeat; background-size: cover; background-position: center center"></div>
 
     <section class="row infoSection">
         <div class="col-xs-12 col-md-5 pl-5 pr-5"><img class="ml-5" src="<?php the_field("info_image"); ?>"></div>

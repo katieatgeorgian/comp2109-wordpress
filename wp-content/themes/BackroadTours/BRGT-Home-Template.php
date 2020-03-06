@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: Backroad Guided Tours;
+ * Description: template for the home page - navigation, masthead with title CTA, followed by a block of text, a gallery of sorts (custom post type), a two-column section, a section (with triangle cutout) perfect for quotes, and finally the latest blog posts, before ending with a footer.
  * The home page template file
  * 
  **/
@@ -13,10 +14,10 @@ get_header(); //hook
     <main id="main" class="site-main" role="main">
     
     <!-- let's use the featured image for the masthead image -->
-    <section class="masthead mb-5 row" style="background-image: url(<?php the_field('masthead_image'); ?>); height: 500px; background-repeat: no-repeat; background-size: cover;"> <!-- display image -->
+    <section class="masthead mb-5 row" style="background-image: url(<?php the_field('masthead_image'); ?>); height: 500px; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;"> <!-- display image -->
         <article class="col-12 mastheadGrid">
             <h1><?php the_field('page_title'); ?></h1><!-- use title of page to display title of page - looks at url of page, looks for page title and spits it out -->
-            <h2 class="mt-3"><?php the_field('masthead_phrase') ?> </h2>
+            <h2 class="mt-3 home"><?php the_field('masthead_phrase') ?> </h2>
             <button class="mastheadBtn"><a href="contact"><?php the_field('masthead_button1') ?></a></button>
         </article>
     </section>
@@ -58,7 +59,7 @@ get_header(); //hook
         <?php 
         //arguments to pass in to our query WP_Query
         $args = array (
-            'showposts' => '5',
+            'showposts' => '3',
             'category_name' => 'travel',
         );
 
