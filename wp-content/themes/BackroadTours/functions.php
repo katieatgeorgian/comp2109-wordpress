@@ -334,7 +334,7 @@ add_filter('excerpt_length', function($length) {
 }); //adjusting excerpt length - 20 refers to 20 characters
 
 
-//Custome Post Type
+//Custom Post Type - Featured Tours
 function tour_offered_init() {
 	$args = array(
 		'label' => 'Featured Tours Offered',
