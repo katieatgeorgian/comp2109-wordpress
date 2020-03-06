@@ -21,8 +21,7 @@ get_header(); //hook
     </section>
 
     <section class="welcomeAbout text-center pl-5 pr-5">
-        <h3>Welcome to Backroad Guided Tours</h3>
-        <h5>Experience The Road Less Travelled</h5>
+        <h3>Experience The Road Less Travelled with Backroads Guided Tours</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Donec quis enim vel enim tempus dictum.</p>
 
         <p>Sed fermentum euismod ipsum, quis facilisis lorem faucibus vel. Nunc a eleifend massa. Proin ultrices mollis fringilla. Vestibulum id mollis mi. Mauris ac nisl imperdiet, ultricies urna quis, tincidunt orci. Duis a justo leo.</p>

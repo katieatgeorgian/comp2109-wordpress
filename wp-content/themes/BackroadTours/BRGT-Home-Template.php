@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Backroad Guided Tours;
+ * Template Name: Backroads Guided Tours;
  * Description: template for the home page - navigation, masthead with title CTA, followed by a block of text, a gallery of sorts (custom post type), a two-column section, a section (with triangle cutout) perfect for quotes, and finally the latest blog posts, before ending with a footer.
  * The home page template file
  * 
@@ -22,7 +22,7 @@ get_header(); //hook
         </article>
     </section>
     <section class="row welcome justify-content-center pl-5 pr-5">
-        <h3>Welcome to <?php the_field('page_title'); ?></h3>
+        <h3>Welcome to <?php the_field('page_title'); ?>!</h3>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Donec quis enim vel enim tempus dictum.</p>
 

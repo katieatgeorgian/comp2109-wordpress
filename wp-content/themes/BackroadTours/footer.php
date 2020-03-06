@@ -32,7 +32,7 @@
 			</nav><!-- .footer-navigation -->
 			<?php endif; ?>
 			<div class="col-xs-12 col-md-5">
-				<p><small>&#169; Backroad Guided Tours - All Rights Reserved</small></p>
+				<p><small>&#169; Backroads Guided Tours - All Rights Reserved</small></p>
 			</div>
 			<div class="col-xs-12 col-md-3 address text-right">
 				<p class="font-weight-bold mb-0">Address</p>
