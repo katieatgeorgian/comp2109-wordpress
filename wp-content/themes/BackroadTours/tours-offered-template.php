@@ -33,7 +33,7 @@
                     
                     <?php wp_reset_postdata(); ?>
                 <?php endwhile; ?>
-                <a href="contact"><button class="tours-offered-btn p-3">Contact/Book</button></a>
+                <a href="contact"><button class="tours-offered-btn p-3">Book/Contact</button></a>
                 <p class="mt-3"><small>For more details, please visit our <span><a href="#">Tours</a><span> page.</small></p>
         </section>
 
