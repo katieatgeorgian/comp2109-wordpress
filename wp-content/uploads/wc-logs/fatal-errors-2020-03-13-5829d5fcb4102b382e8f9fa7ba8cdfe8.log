@@ -1,0 +1,10 @@
+2020-03-13T01:09:23+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-admin\src\Overrides\Order.php on line 12
+
+2020-03-13T01:09:23+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-admin\src\Overrides\Order.php on line 12
+
+2020-03-13T01:09:24+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-order.php on line 16
+
+2020-03-13T01:09:24+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-admin\vendor\composer\ClassLoader.php on line 384
+
+2020-03-13T01:09:24+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-order.php on line 16
+

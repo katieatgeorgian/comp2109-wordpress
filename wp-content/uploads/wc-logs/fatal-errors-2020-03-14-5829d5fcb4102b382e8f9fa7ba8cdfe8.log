@@ -1,0 +1,24 @@
+2020-03-14T18:12:23+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\jetpack\class.jetpack-gutenberg.php on line 731
+
+2020-03-14T18:12:23+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-admin\src\API\Reports\Products\DataStore.php on line 10
+
+2020-03-14T18:12:24+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-admin\vendor\composer\ClassLoader.php on line 384
+
+2020-03-14T18:12:24+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-admin\src\API\Reports\Taxes\DataStore.php on line 10
+
+2020-03-14T18:12:24+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-admin\vendor\composer\ClassLoader.php on line 384
+
+2020-03-14T18:16:11+00:00 CRITICAL Cannot redeclare twentynineteen_widgets_init() (previously declared in C:\xampp\htdocs\wordpress\wp-content\themes\cmsclass\functions.php:188) in C:\xampp\htdocs\wordpress\wp-content\themes\soleil\functions.php on line 200
+
+2020-03-14T23:07:25+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-gateway-paypal-express-checkout\includes\class-wc-gateway-ppec-cart-handler.php on line 5
+
+2020-03-14T23:07:30+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-api.php on line 2
+
+2020-03-14T23:09:27+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\admin\wc-admin-functions.php on line 9
+
+2020-03-14T23:09:40+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-admin\includes\class-wp-privacy-policy-content.php on line 10
+
+2020-03-14T23:19:13+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\wp-db.php on line 2030
+
+2020-03-14T23:22:07+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\jetpack\extensions\blocks\repeat-visitor\repeat-visitor.php on line 10
+

@@ -1,0 +1,6 @@
+2020-03-19T21:44:58+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\wpforms-lite\includes\admin\class-tools.php on line 8
+
+2020-03-19T21:47:00+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-gateway-paypal-express-checkout\includes\class-wc-gateway-ppec-checkout-handler.php on line 6
+
+2020-03-19T21:49:23+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\wp-db.php on line 2030
+
