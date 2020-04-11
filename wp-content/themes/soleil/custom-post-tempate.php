@@ -15,10 +15,9 @@ get_header('post');
                     if (have_posts()) : while (have_posts()) : the_post(); // as long as post run through post (loop) and grab content and spit out post
                 ?>
                 <div class="row col-xs-12 col-md-7 mr-3 ml-5">
-                    
-                    <div class="col-xs-12 flex-column ml-5">
-                        <div class="mb-3 text-center"> <?php the_post_thumbnail(); ?> </div>
-                        <div> <?php the_title(); ?></div>
+                    <div class="ml-5">
+                        <div class="mb-3 text-center float-right ml-5"> <?php the_post_thumbnail(); ?> </div>
+                        <div class="title"> <?php the_title(); ?></div>
                         <div class="postDivider mt-2 mb-2"></div>
                         <?php the_content(); ?> <!-- whatever put in editor -->
                         <div class="d-flex">
@@ -71,5 +70,5 @@ get_header('post');
         </div>
     </section>
 <?php 
-    get_footer();
+    get_footer('post');
 ?>

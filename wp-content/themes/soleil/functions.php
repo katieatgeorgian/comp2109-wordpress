@@ -388,3 +388,51 @@ function tea_shortcode() {
 }
 
 add_action('init', 'tea_shortcode');
+
+//Let's edit some hooks
+
+//remove the default wrappers
+remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+//remove closing tags of wrappers
+remove_action('woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+//remove hooks on single product page so can do whatever we want with them
+//remove price
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
+//remove rating
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
+//remove excerpt
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
+//remove add to cart
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30); //last to show
+
+
+//add hooks on single project pages
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 9);
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 8);
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 15);
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 5);
+
+//move rating stars on shop page
+remove_action('wocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5);
+
+
+//create our new wrapper
+function my_theme_wrapper_start() {
+	echo '<main id="main">';
+}
+
+function my_theme_wrapper_end() {
+	echo '</main>';
+}
+
+//add woocommerce support (because haven't moved over all core files to theme need to add support by default)
+function mytheme_add_woocommerce_support() {
+	add_theme_support('woocommerce'); //pulled in additional functionality for WC like processing
+	add_theme_support('wc-product-gallery-zoom'); 
+	add_theme_support('wc-product-gallery-lightbox');
+	add_theme_support('wc-product-gallery-slider');
+}
+
+//initializes
+add_action('after_setup_theme', 'mytheme_add_woocommerce_support');

@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Soleil - About;
- * Description: template for the about page - navigation, masthead with title CTA, followed by a block of text, a gallery of sorts (custom post type), a two-column section, a section (with triangle cutout) perfect for quotes, and finally the latest blog posts, before ending with a footer.
+ * Description: template for the about page - navigation, masthead, followed by a section of text layed on top of an image and finally the latest blog posts, before ending with a footer.
  * The about page template file
  * 
  **/
@@ -24,6 +24,7 @@ get_header(); //hook
            
         <div class="aboutOverlay">
             <img class="imgAboutOverlay" src=<?php the_field('sectionphoto'); ?> alt="woman holding mug">
+            <div class="overlayTest"></div>
             <div class="textAboutOverlay text-right mr-3">
                 <h3>Our Story</h3>
                 <p>Carajillo flavour et extraction, white decaffeinated blue mountain macchiato caramelization cortado rich. Foam doppio macchiato extra half and half, beans half and half cinnamon decaffeinated shop. Decaffeinated, roast sugar, variety black, instant dark breve strong steamed trifecta viennese.</p>
@@ -32,11 +33,6 @@ get_header(); //hook
             </div>
         </div>
     </section>
-  
-    <div class="d-flex justify-content-center mt-5 mb-4">
-            <div class="divider"></div>
-        </div>
-
    
     <!-- display the posts -->
     <section class="blogPosts mt-5 pr-4 pl-4"> 
@@ -77,14 +73,6 @@ get_header(); //hook
             ?>
         </div>
     </section>
-
-    <section class="mt-5" style="background-image: url(<?php the_field('newsletter_photo'); ?>); height: 500px; background-repeat: no-repeat; background-size: cover; background-position: bottom center">
-        <div class="overlay">
-            <p>Stay up to date with Soleil Tea.  Subscribe to our mailing list.
-            <?php echo do_shortcode ('[wpforms id="466" title="false" description="false"]' ) ?>   
-        </div>
-    </section>
-
     </main>
 </div>
 

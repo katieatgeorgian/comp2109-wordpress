@@ -15,13 +15,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer mt-5">
-		<section style="background-image: url(<?php the_field('newsletter_photo'); ?>); height: 500px; background-repeat: no-repeat; background-size: cover; background-position: bottom center">
-			<div class="overlay">
-				<p>Stay up to date with Soleil Tea.  Subscribe to our mailing list.
-				<?php echo do_shortcode ('[wpforms id="466" title="false" description="false"]' ) ?>   
-			</div>
-		</section>
+	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			<div class="justify-content-center row">
 			<?php if ( has_nav_menu( 'footer' ) ) : ?>
