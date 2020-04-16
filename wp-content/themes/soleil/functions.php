@@ -373,7 +373,7 @@ function tea_categories() {
 			<div class='tea-image'>";
 				the_post_thumbnail();
 				// the_content();
-	echo "<button class='teaBtn'> <a href='tea_categories'>";
+	echo "<button class='teaBtn'> <a href='tea-categories'>";
 			the_title();
 			
 	echo "</a></button>

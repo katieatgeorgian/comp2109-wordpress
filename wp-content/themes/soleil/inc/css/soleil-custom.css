@@ -76,7 +76,7 @@ i:hover {
     color: #5b381f;
   }
   to {
-    font-size: 1.6rem;
+    font-size: 2.6rem !important;
     color: #5b381f;
     transform: rotate(360deg);
   }
@@ -194,6 +194,7 @@ div.menu-soleil-container ul#menu-soleil.menu li {
 
 .teaBtn:hover {
   background-color: rgba(34, 94, 96, 0.7);
+  box-shadow: 2px 2px 5px rgb(187, 187, 187);
 }
 
 .teaBtn:hover a {
@@ -292,6 +293,10 @@ footer.site-footer {
   background-image: linear-gradient(#225e60 10%, #379b9e 60%, #225e60 90%);
 }
 
+footer a {
+  font-family: "ZCOOL XiaoWei", Georgia, "Times New Roman", Times, serif !important;
+  font-size: 0.9rem !important;
+}
 div.wpforms-field-container {
   width: 60% !important;
   margin-right: -20% !important;
@@ -368,12 +373,6 @@ div.aboutOverlay {
 p {
   font-size: 1rem;
   padding-bottom: 0 !important;
-}
-
-.divider {
-  background-color: #5b381f;
-  height: 3px;
-  min-width: 1000px;
 }
 
 .wpforms-field-medium.wpforms-field-required {
@@ -552,4 +551,79 @@ div.summary.entry-summary span.woocommerce-Price-amount.amount {
 
 div.wcppec-checkout-buttons.woo_pp_cart_buttons_div {
   margin-top: 0 !important;
+}
+
+div.shopWrap div#primary.content-area {
+  display: flex;
+}
+
+div.shopWrap div#primary.content-area div#sidebar {
+  text-align: right !important;
+}
+
+div.shopWrap div#primary.content-area div#sidebar ul section#recent-posts-2,
+div.shopWrap div#primary.content-area div#sidebar ul section#recent-comments-2,
+div.shopWrap div#primary.content-area div#sidebar ul section#archives-2,
+div.shopWrap div#primary.content-area div#sidebar ul section#categories-2,
+div.shopWrap div#primary.content-area div#sidebar ul section#meta-2 {
+  display: none !important;
+}
+
+div.shopWrap
+  div#sidebar
+  section#woocommerce_widget_cart-2.widget.woocommerce.widget_shopping_cart
+  div.widget_shopping_cart_content
+  p.woocommerce-mini-cart__total.total,
+div.shopWrap
+  div#sidebar
+  section#woocommerce_widget_cart-2.widget.woocommerce.widget_shopping_cart
+  div.widget_shopping_cart_content
+  p.woocommerce-mini-cart__buttons.buttons,
+div.shopWrap
+  div#sidebar
+  section#woocommerce_widget_cart-2.widget.woocommerce.widget_shopping_cart
+  div.widget_shopping_cart_content
+  p.woocommerce-mini-cart__buttons.buttons.wcppec-cart-widget-spb {
+  display: none !important;
+}
+
+div.shopWrap
+  div.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images
+  figure.woocommerce-product-gallery__wrapper {
+  width: 85% !important;
+  height: auto !important;
+}
+
+.woocommerce #content div.product div.summary,
+.woocommerce div.product div.summary,
+.woocommerce-page #content div.product div.summary,
+.woocommerce-page div.product div.summary {
+  padding: 0 100px 0 30px !important;
+}
+
+div.shopWrap span.onsale {
+  background-color: #225e60 !important;
+}
+
+body.post-template.post-template-custom-post-tempate.post-template-custom-post-tempate-php.single.single-post.single-format-standard.logged-in.admin-bar.wp-embed-responsive.theme-soleil.woocommerce-js.singular.image-filters-enabled.customize-support
+  section#woocommerce_widget_cart-2.widget.woocommerce.widget_shopping_cart {
+  display: none !important;
+}
+
+body.post-template.post-template-custom-post-tempate.post-template-custom-post-tempate-php.single.single-post.single-format-standard.logged-in.admin-bar.wp-embed-responsive.theme-soleil.woocommerce-js.singular.image-filters-enabled.customize-support
+  section#categories-3.widget.widget_categories {
+  display: none;
+}
+
+body.post-template.post-template-custom-post-tempate.post-template-custom-post-tempate-php.single.single-post.single-format-standard.logged-in.admin-bar.wp-embed-responsive.theme-soleil.woocommerce-js.singular.image-filters-enabled.customize-support
+  section#woocommerce_recently_viewed_products-2.widget.woocommerce.widget_recently_viewed_products {
+  display: none;
+}
+
+body.archive.post-type-archive.post-type-archive-product.logged-in.admin-bar.wp-embed-responsive.theme-soleil.woocommerce.woocommerce-page.woocommerce-js.hfeed.image-filters-enabled.customize-support
+  h1 {
+  font-family: "ZCOOL XiaoWei", Georgia, "Times New Roman", Times, serif !important;
+  color: #225e60;
+  text-shadow: none;
+  font-size: 2.9rem;
 }

@@ -32,11 +32,11 @@ get_header(); //hook
                 <p>Cream bar, extraction affogato, steamed french press seasonal turkish latte. Trifecta whipped, roast, lungo aftertaste seasonal extraction body steamed. Blue mountain, sugar, a, milk french press cappuccino, americano single origin sweet half and half variety saucer.</p>
             </div>
         </div>
+ 
     </section>
    
     <!-- display the posts -->
     <section class="blogPosts mt-5 pr-4 pl-4"> 
-        
         <?php 
         //arguments to pass in to our query WP_Query
         $args = array (

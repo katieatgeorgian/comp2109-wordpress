@@ -23,7 +23,7 @@
 			</div>
 		</section>
 		<div class="site-info">
-			<div class="justify-content-center row">
+			<div class="row justify-content-between">
 			<?php if ( has_nav_menu( 'footer' ) ) : ?>
 				<nav class="footer-navigation col-xs-12 col-md-4" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
 					<?php
@@ -37,23 +37,7 @@
 					?>
 				</nav><!-- .footer-navigation -->
 			<?php endif; ?>
-			<div class="col-xs-12 col-md-5">
-				<p><small>&#169; Soleil Tea Co. - All Rights Reserved</small></p>
-			</div>
-			<div class="col-xs-12 col-md-3 address text-right">
-				<p class="font-weight-bold mb-0">Address</p>
-				<address>
-				1 Georgian Drive<br>
-				Barrie, Ontario
-				</address>
-				<p>
-					(705) 555-5555
-				</p>	
-				</div>
-		
-			</div><!-- made up div d-flex row -->
-			<div>
-				<section>
+				<div class="col-xs-12-col-md-4">
 					<ul class="row justify-content-center">
 					<li class="list-unstyled px-1">
 						<a title="Facebook" href="#"
@@ -69,7 +53,23 @@
 						<a title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
 					</li>
 					</ul>
-				</section>
+
+				</div>
+				<div class="col-xs-12 col-md-4 address text-right">
+					<p class="font-weight-bold mb-0">Address</p>
+					<address>
+					1 Georgian Drive<br>
+					Barrie, Ontario
+					</address>
+					<p>
+						(705) 555-5555
+					</p>	
+				</div>
+		
+			</div><!-- made up div d-flex row -->
+
+			<div class="row">
+				<p class="pl-3"><small>&#169; Soleil Tea Co. - All Rights Reserved</small></p>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
