@@ -1,0 +1,55 @@
+04-16-2020 @ 19:32:24 - WC_Gateway_PPEC_Client::_request: remote request to https://api-3t.paypal.com/nvp with params: Array
+(
+    [LOGOIMG] => http://localhost/wordpress/wp-content/uploads/2020/03/soleilteaco.png
+    [HDRIMG] => 
+    [PAGESTYLE] => 
+    [BRANDNAME] => CMS Class
+    [RETURNURL] => http://localhost/wordpress/checkout/?woo-paypal-return=true
+    [CANCELURL] => http://localhost/wordpress/cart/?woo-paypal-cancel=true
+    [LANDINGPAGE] => Login
+    [SOLUTIONTYPE] => Sole
+    [PAYMENTREQUEST_0_PAYMENTACTION] => sale
+    [PAYMENTREQUEST_0_INSURANCEAMT] => 0
+    [PAYMENTREQUEST_0_HANDLINGAMT] => 0
+    [PAYMENTREQUEST_0_CUSTOM] => 
+    [PAYMENTREQUEST_0_INVNUM] => 
+    [PAYMENTREQUEST_0_CURRENCYCODE] => CAD
+    [PAYMENTREQUEST_0_AMT] => 5.98
+    [PAYMENTREQUEST_0_ITEMAMT] => 5.98
+    [PAYMENTREQUEST_0_SHIPPINGAMT] => 0
+    [PAYMENTREQUEST_0_TAXAMT] => 0
+    [PAYMENTREQUEST_0_SHIPDISCAMT] => 0
+    [NOSHIPPING] => 0
+    [EMAIL] => katie.hanson@mygeorgian.ca
+    [PAYMENTREQUEST_0_SHIPTONAME] =>  
+    [PAYMENTREQUEST_0_SHIPTOSTREET] => 
+    [PAYMENTREQUEST_0_SHIPTOSTREET2] => 
+    [PAYMENTREQUEST_0_SHIPTOCITY] => 
+    [PAYMENTREQUEST_0_SHIPTOSTATE] => ON
+    [PAYMENTREQUEST_0_SHIPTOZIP] => 
+    [PAYMENTREQUEST_0_SHIPTOCOUNTRYCODE] => CA
+    [PAYMENTREQUEST_0_SHIPTOPHONENUM] => 
+    [L_PAYMENTREQUEST_0_NAME0] => Lemon Honey Cleanse Tea (50g)
+    [L_PAYMENTREQUEST_0_DESC0] => Teacup camellia sinensis herbal white loose leaf baihao yinzhen blend teapot tea kettle catechin infuser. Matcha rooibos fermen
+    [L_PAYMENTREQUEST_0_QTY0] => 1
+    [L_PAYMENTREQUEST_0_AMT0] => 5.98
+    [METHOD] => SetExpressCheckout
+    [VERSION] => 120.0
+    [USER] => 
+    [PWD] => 
+    [SIGNATURE] => 
+)
+
+04-16-2020 @ 19:32:25 - WC_Gateway_PPEC_Client::_process_response: acknowleged response body: Array
+(
+    [TIMESTAMP] => 2020-04-16T23:32:25Z
+    [CORRELATIONID] => c6398aea7cede
+    [ACK] => Failure
+    [VERSION] => 120.0
+    [BUILD] => 54449905
+    [L_ERRORCODE0] => 10002
+    [L_SHORTMESSAGE0] => Authentication/Authorization Failed
+    [L_LONGMESSAGE0] => You do not have permissions to make this API call
+    [L_SEVERITYCODE0] => Error
+)
+

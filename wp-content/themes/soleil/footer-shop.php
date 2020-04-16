@@ -16,7 +16,8 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-	<div class="site-info">
+		<div class="site-info">
+			<!-- bottom green footer -->
 			<div class="row justify-content-between">
 			<?php if ( has_nav_menu( 'footer' ) ) : ?>
 				<nav class="footer-navigation col-xs-12 col-md-4" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
@@ -31,6 +32,7 @@
 					?>
 				</nav><!-- .footer-navigation -->
 			<?php endif; ?>
+			<!-- social media icons -->
 				<div class="col-xs-12-col-md-4">
 					<ul class="row justify-content-center">
 					<li class="list-unstyled px-1">
@@ -49,6 +51,7 @@
 					</ul>
 
 				</div>
+				<!-- contact info -->
 				<div class="col-xs-12 col-md-4 address text-right">
 					<p class="font-weight-bold mb-0">Address</p>
 					<address>

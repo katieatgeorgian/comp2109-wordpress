@@ -359,15 +359,14 @@ function tea_categories_init() {
 		register_post_type('tea_categories', $args);
 }
 
-add_action('init', 'tea_categories_init'); //initializing it
+//initializing it
+add_action('init', 'tea_categories_init'); 
 
-//let's make our first shortcode - common - need to know what displaying
+//creating content for CPT when inserted using shortcodes
 function tea_categories() {
 	$query = new WP_Query ( array('post_type' => 'tea_categories', 'post_per_page' => 5, 'orderby' => 'menu_order') );
 
-	//created dynamically - keep simple - placing inside something
 	while ($query->have_posts() ) : $query->the_post();
-
 
 	echo "<div class='tea_categories'> 
 			<div class='tea-image'>";
@@ -382,14 +381,14 @@ function tea_categories() {
 	endwhile;
 	wp_reset_query(); 
 }
-
+//make tea categories shortcode
 function tea_shortcode() {
 	add_shortcode('tea_shortcode', "tea_categories");
 }
 
 add_action('init', 'tea_shortcode');
 
-//Let's edit some hooks
+//EDITING HOOKS
 
 //remove the default wrappers
 remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);

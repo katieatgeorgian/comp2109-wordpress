@@ -8,7 +8,6 @@
 get_header();
 ?>
 
-
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
     
@@ -27,19 +26,15 @@ get_header();
     </section>
 
     <!-- featured product -->
-    <section class="row mt-5">
-        <div class="col-xs-12 col-md-5 circle text-center">
-            <img src="<?php the_field('featured_product_photo'); ?>">
+    <section class="featuredProduct row mt-2 mb-3 align-items-center">
+        <h3 class="pb-3">Featured Product - 20% off!</h3>
+        <div>
+            <?php echo do_shortcode('[featured_products per_page="1" columns="1"]'); ?>
         </div>
-        <div class="col-xs-12 col-md-6 pr-2">
-            <h3>Featured Product - 20% off!</h3>
-            <h4><?php the_field('featured_product_title'); ?></h4>
-            <p><?php the_field('featured_product_info'); ?></p>
-            <button class="learnMore"><a href=<?php the_field('featured_product_url') ?>>Learn More about <?php the_field('featured_product_title') ?></a></button>
-        </div>
+        <button class="learnMore mb-5"><a href=<?php the_field('featured_product_url') ?>>Learn More about <?php the_field('featured_product_title') ?></a></button>
     </section>
 
-    <!-- welcome -->
+    <!-- welcome section -->
     <section class="row infoSection mt-5">
         <div class="col-xs-12 col-md-6 ml-5 pl-5 pr-0 mr-0">
             <h3 class="ml-5">Welcome to <?php the_field('page_title'); ?>!</h3>
@@ -54,15 +49,13 @@ get_header();
 
     </section>
    
-    <!-- display the posts -->
+    <!-- display one post -->
     <section class="blogPosts mt-5 pr-4 pl-4"> 
-        
         <?php 
         $args = array (
             'showposts' => '1',
             'category_name' => 'tea',
         );
-
         $the_query = new WP_Query($args); ?>
         <h4 class="pb-3 text-uppercase text-right mr-5 fromBlog">From the Blog</h4>
         <div class="d-flex">
@@ -85,9 +78,6 @@ get_header();
             ?>
         </div>
     </section>
-
-    
-
     </main>
 </div>
 

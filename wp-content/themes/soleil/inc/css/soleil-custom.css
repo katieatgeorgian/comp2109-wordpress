@@ -37,6 +37,10 @@ h6 {
   color: #225e60;
 }
 
+h4.fromBlog {
+  font-size: 2rem !important;
+}
+
 li {
   list-style: none;
 }
@@ -53,6 +57,9 @@ a:hover {
   color: #5b381f !important;
 }
 
+header nav a {
+  font-size: 1.6rem;
+}
 footer address,
 .address p,
 footer a,
@@ -140,6 +147,7 @@ div.menu-soleil-container ul#menu-soleil.menu li {
   color: white !important;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+  font-size: 1rem;
 }
 
 .mastheadBtn:hover a,
@@ -190,6 +198,7 @@ div.menu-soleil-container ul#menu-soleil.menu li {
 
 .teaBtn a {
   color: #225e60 !important;
+  font-size: 1rem;
 }
 
 .teaBtn:hover {
@@ -202,18 +211,11 @@ div.menu-soleil-container ul#menu-soleil.menu li {
 }
 
 /* featured product */
-.circle img {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 20rem !important;
-  height: 20rem !important;
-  text-align: center;
-  border: 1px solid black;
-}
 
 .learnMore {
   background-color: #5b381f !important;
   color: white !important;
+  margin-top: -3rem;
 }
 
 .learnMore:hover {
@@ -229,6 +231,54 @@ a.learnMore {
 a.learnMore:hover {
   color: #225e60 !important;
 }
+
+.featuredProduct {
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  box-shadow: 2px 2px 5px #c4c4c4;
+  margin: 0 5rem;
+  padding-bottom: 0 !important;
+}
+
+body.page-template-Soleil-Home-Template
+  div.woocommerce.columns-1
+  li.entry.product.type-product {
+  width: 30% !important;
+  height: auto !important;
+}
+
+body.page-template-Soleil-Home-Template
+  a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
+  display: flex;
+}
+
+body.page-template-Soleil-Home-Template h2.woocommerce-loop-product__title {
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+  min-width: 100%;
+  font-size: 1.3rem !important;
+}
+
+body.page-template-Soleil-Home-Template span.onsale {
+  background-color: #5b381f !important;
+  color: white !important;
+}
+body.page-template-Soleil-Home-Template span.woocommerce-Price-amount.amount {
+  color: #5b381f !important;
+}
+
+body.page-template-Soleil-Home-Template li.entry.product.type-product {
+  position: relative;
+}
+body.page-template-Soleil-Home-Template
+  a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+  position: absolute;
+  left: 20rem;
+  top: 5rem;
+  width: 100%;
+}
+
 /* welcome */
 div.infoPhoto img {
   width: 75% !important;
@@ -236,10 +286,6 @@ div.infoPhoto img {
 }
 
 /* blog */
-.fromBlog {
-  font-size: 2rem;
-}
-
 .blogPosts {
   margin: 0 auto;
   width: 70%;
@@ -499,6 +545,10 @@ button.teas-btn:hover a {
   color: #242526;
 }
 
+.CPTContact a {
+  font-size: 0.8rem !important;
+}
+
 /* SHOP */
 
 div.shopWrap {
@@ -626,4 +676,9 @@ body.archive.post-type-archive.post-type-archive-product.logged-in.admin-bar.wp-
   color: #225e60;
   text-shadow: none;
   font-size: 2.9rem;
+}
+
+body.archive.post-type-archive.post-type-archive-product.logged-in.admin-bar.wp-embed-responsive.theme-soleil.woocommerce.woocommerce-page.woocommerce-js.hfeed.image-filters-enabled.customize-support
+  li.product {
+  width: 19% !important;
 }

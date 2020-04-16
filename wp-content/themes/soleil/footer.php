@@ -16,12 +16,14 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer mt-5">
+		<!-- newsletter/mailing list section -->
 		<section style="background-image: url(<?php the_field('newsletter_photo'); ?>); height: 500px; background-repeat: no-repeat; background-size: cover; background-position: bottom center">
 			<div class="overlay">
 				<p>Stay up to date with Soleil Tea.  Subscribe to our mailing list.
 				<?php echo do_shortcode ('[wpforms id="466" title="false" description="false"]' ) ?>   
 			</div>
 		</section>
+		<!-- bottom green footer -->
 		<div class="site-info">
 			<div class="row justify-content-between">
 			<?php if ( has_nav_menu( 'footer' ) ) : ?>
@@ -37,6 +39,7 @@
 					?>
 				</nav><!-- .footer-navigation -->
 			<?php endif; ?>
+			<!-- social media icons -->
 				<div class="col-xs-12-col-md-4">
 					<ul class="row justify-content-center">
 					<li class="list-unstyled px-1">
@@ -55,6 +58,7 @@
 					</ul>
 
 				</div>
+				<!-- contact info -->
 				<div class="col-xs-12 col-md-4 address text-right">
 					<p class="font-weight-bold mb-0">Address</p>
 					<address>
