@@ -16,8 +16,15 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+		<!-- newsletter/mailing list section -->
+		<section style="background-image: url('http://localhost/wordpress/wp-content/uploads/2020/03/teapot-lineup2.jpg'); height: 500px; background-repeat: no-repeat; background-size: cover; background-position: bottom center">
+			<div class="overlay">
+				<p>Stay up to date with Soleil Tea.  Subscribe to our mailing list.
+				<?php echo do_shortcode ('[wpforms id="466" title="false" description="false"]' ) ?>   
+			</div>
+		</section>
+		<!-- bottom green footer -->
 		<div class="site-info">
-			<!-- bottom green footer -->
 			<div class="row justify-content-between">
 			<?php if ( has_nav_menu( 'footer' ) ) : ?>
 				<nav class="footer-navigation col-xs-12 col-md-4" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
